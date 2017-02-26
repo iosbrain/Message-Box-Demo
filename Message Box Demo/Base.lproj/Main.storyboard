@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Message_Box_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kMo-B8-L0e">
+                                <rect key="frame" x="63" y="28" width="249" height="30"/>
+                                <state key="normal" title="Show Dismiss MsgBox (No Defaults)"/>
+                                <connections>
+                                    <action selector="showMessageBoxWithNoDefaultText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CDd-Wl-gCf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LDF-d6-JOS">
+                                <rect key="frame" x="50" y="150" width="275" height="30"/>
+                                <state key="normal" title="Show Dismiss/OK MsgBox (No Defaults)"/>
+                                <connections>
+                                    <action selector="showDismissOKMsgBoxWNoDefaultText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xVd-qK-eVv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ol-Rc-veK">
+                                <rect key="frame" x="67" y="104" width="244" height="30"/>
+                                <state key="normal" title="Show Dismiss MsgBox W/ New Text"/>
+                                <connections>
+                                    <action selector="showMsgBoxWithNewText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O1k-jE-p7w"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ywU-Uy-0Fo">
+                                <rect key="frame" x="60" y="66" width="255" height="30"/>
+                                <state key="normal" title="Show Dismiss MsgBox (With Params)"/>
+                                <connections>
+                                    <action selector="showMsgBoxWithParams:" destination="BYZ-38-t0r" eventType="touchUpInside" id="00S-3b-SFl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1la-fW-TYB">
+                                <rect key="frame" x="47" y="188" width="281" height="30"/>
+                                <state key="normal" title="Show Dismiss/OK MsgBox (With Params)"/>
+                                <connections>
+                                    <action selector="showDisOkMsgBoxWithParams:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7z6-T5-2JN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hr4-lO-CLG">
+                                <rect key="frame" x="52" y="226" width="270" height="30"/>
+                                <state key="normal" title="Show Dismiss/OK MsgBox W/ New Text"/>
+                                <connections>
+                                    <action selector="showDisOkMsgBoxWithNewText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qu1-1H-gvq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yuM-JG-4sw">
+                                <rect key="frame" x="41" y="272" width="292" height="30"/>
+                                <state key="normal" title="Show 1 Dismiss/OK MsgBox (With Params)"/>
+                                <connections>
+                                    <action selector="showStackDismissOKMsgBox:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AaI-hd-GcT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFr-yg-tU4">
+                                <rect key="frame" x="87" y="318" width="200" height="30"/>
+                                <state key="normal" title="Show 1 MsgBox W/ Text Field"/>
+                                <connections>
+                                    <action selector="showStackDismissOKTextFieldMsgBox:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ubB-Rx-y58"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vUM-Tc-qhj">
+                                <rect key="frame" x="16" y="404" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Console:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Atl-PJ-KJp">
+                                <rect key="frame" x="154" y="375" width="67" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Atl-PJ-KJp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1fr-wP-Jdy"/>
+                            <constraint firstItem="ywU-Uy-0Fo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Fg-Fz-5eJ"/>
+                            <constraint firstItem="Hr4-lO-CLG" firstAttribute="top" secondItem="1la-fW-TYB" secondAttribute="bottom" constant="8" id="8F0-S7-aFl"/>
+                            <constraint firstItem="5Ol-Rc-veK" firstAttribute="top" secondItem="ywU-Uy-0Fo" secondAttribute="bottom" constant="8" id="BzV-9a-DVC"/>
+                            <constraint firstItem="Atl-PJ-KJp" firstAttribute="top" secondItem="PFr-yg-tU4" secondAttribute="bottom" constant="27" id="Dwu-p3-Dwd"/>
+                            <constraint firstItem="yuM-JG-4sw" firstAttribute="top" secondItem="Hr4-lO-CLG" secondAttribute="bottom" constant="16" id="HPW-nf-L01"/>
+                            <constraint firstItem="PFr-yg-tU4" firstAttribute="top" secondItem="yuM-JG-4sw" secondAttribute="bottom" constant="16" id="Ifd-ET-SZR"/>
+                            <constraint firstItem="LDF-d6-JOS" firstAttribute="top" secondItem="5Ol-Rc-veK" secondAttribute="bottom" constant="16" id="KT5-iw-YbN"/>
+                            <constraint firstItem="PFr-yg-tU4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ndm-TO-ZHD"/>
+                            <constraint firstItem="vUM-Tc-qhj" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="SZu-Td-9x0"/>
+                            <constraint firstItem="yuM-JG-4sw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SxB-3U-PR3"/>
+                            <constraint firstItem="LDF-d6-JOS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UWo-D0-6cH"/>
+                            <constraint firstItem="1la-fW-TYB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XfF-0M-qlZ"/>
+                            <constraint firstItem="1la-fW-TYB" firstAttribute="top" secondItem="LDF-d6-JOS" secondAttribute="bottom" constant="8" id="dj9-CL-xhe"/>
+                            <constraint firstItem="5Ol-Rc-veK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1.5" id="dve-l5-y8P"/>
+                            <constraint firstItem="kMo-B8-L0e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e93-FW-pqj"/>
+                            <constraint firstItem="vUM-Tc-qhj" firstAttribute="top" secondItem="Atl-PJ-KJp" secondAttribute="bottom" constant="8" id="ey9-hf-Qm9"/>
+                            <constraint firstItem="Hr4-lO-CLG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fth-6G-t0g"/>
+                            <constraint firstItem="ywU-Uy-0Fo" firstAttribute="top" secondItem="kMo-B8-L0e" secondAttribute="bottom" constant="8" id="rMS-Ay-jQN"/>
+                            <constraint firstItem="kMo-B8-L0e" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="vK2-kq-xqZ"/>
+                            <constraint firstItem="vUM-Tc-qhj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="xyF-7k-1L8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="outputConsole" destination="vUM-Tc-qhj" id="Pfy-vd-yA9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="36.431784107946029"/>
+        </scene>
+    </scenes>
+</document>
